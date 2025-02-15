@@ -5,7 +5,7 @@ print (a)
 a.sort()
 
 # a.sort(reverse=True)
-a.reverse()
+a.reerse()
 print (a)
 
 
