@@ -1,4 +1,4 @@
-# # write operarion  w
+# # write operarion  
 # file = open("Std_list.txt", "w")
 # text = "Hello Mahib,we area learining python "
 # file.write(text)
