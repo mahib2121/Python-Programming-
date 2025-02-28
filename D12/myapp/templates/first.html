@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        display: flex;
+        width: 900px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .login-box {
+        flex: 1;
+        padding: 40px;
+      }
+
+      .login-box h2 {
+        margin-bottom: 10px;
+      }
+
+      .login-box p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .login-box label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+
+      .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .forgot {
+        display: block;
+        text-align: right;
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 10px;
+        background: #004d40;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .divider {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 14px;
+        color: #999;
+      }
+
+      .google-btn,
+      .facebook-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .google-btn {
+        background: white;
+        border: 1px solid #ccc;
+      }
+
+      .facebook-btn {
+        background: #3b5998;
+        color: white;
+      }
+
+      .signup {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .signup a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .image-box {
+        flex: 1;
+        background: url("pic1.jpeg") no-repeat center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <h2>Welcome Back <span>&#128075;</span></h2>
+        <p>
+          A brand new day is here. It's your day to shape. Sign in and get
+          started on your projects.
+        </p>
+
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="Example@email.com" required />
+
+          <label>Password</label>
+          <input type="password" placeholder="At least 8 characters" required />
+
+          <a href="#" class="forgot">Forgot Password?</a>
+
+          <button type="submit" class="btn">Sign in</button>
+        </form>
+
+        <div class="divider">Or</div>
+
+        <button class="google-btn">Login with Google</button>
+        <button class="facebook-btn">Login with Facebook</button>
+
+        <p class="signup">Don't you have an account? <a href="#">Sign up</a></p>
+      </div>
+      <div class="image-box"></div>
+    </div>
+  </body>
+</html>
